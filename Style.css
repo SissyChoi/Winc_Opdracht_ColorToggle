@@ -1,0 +1,151 @@
+body {
+    background-color: grey;
+}
+
+.background-home {
+    background-color: grey;
+}
+
+.background-red {
+    background-color: red;
+}
+
+.background-orange {
+    background-color: orange;
+}
+
+.background-purple {
+    background-color: purple;
+}
+
+.background-green {
+    background-color: greenyellow;
+}
+.nav-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.btn-toggle-nav {
+    width: 60px;
+    height: 100%;
+    padding: 20px;
+    background-color: plum;
+    background-image: url(hamburger_menu.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-toggle-nav:hover {
+    opacity: 50%;
+}
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: calc(100vh - 60px);
+    padding-top: 15px;
+    padding-right: 40px;
+    background-color: plum;
+    z-index: 1000;
+    transition: all 0,3s ease-in-out;
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+/*.nav-sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    overflow: hidden;
+    visibility: hidden; /*word weer zichtbaar via javascript*/
+} 
+
+.nav-sidebar ul li a, .nav-sidebar ul li {
+    display: block;
+    height: 60%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0,3s ease-in-out;
+}
+
+.color-home {
+    background-color: grey;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-orange {
+    background-color: orange;
+}
+
+.color-purple {
+    background-color: purple;
+}
+
+.color-green {
+    background-color: greenyellow;
+}
+
+.color-home,
+.color-red,
+.color-orange,
+.color-purple,
+.color-green {
+    display: block;
+    height: 60%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.color-home:hover,
+.color-red:hover,
+.color-orange:hover,
+.color-purple:hover,
+.color-green:hover {
+    opacity: 50%;
+}
+
+.nav-sidebar ul li {
+    list-style: none;
+    line-height: 60px;
+}
+
+.rainbow-text {
+    margin-top: 100px;
+    margin-left: 50px;
+    background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    transition: background-image .25s ease-in-out;
+}
+.nav-menu {
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: center;
+}
